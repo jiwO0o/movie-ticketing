@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="movie.css">
+    </head>
+    
+    <body>
+        <div class="header">
+            <h1 class="title" onclick="location.href='index.html'">Movie Ticketing Service</h1>
+
+            <div class="headerBtn">
+                <div class="loginDefault">
+                    <button id="logout" style="display:none;" onclick="logout()">로그아웃</button>
+                    <button id="mypage" style="display:none;" onclick="location.href='myTicket.html'">예매내역</button>
+                </div>
+                <div class="logoutDefault">
+                    <button id="login" onclick="location.href='login.html'">로그인</button>
+                    <button id="signup" onclick="location.href='signup.html'">회원가입</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="movie-detail-container">
+            <div class="movie">
+                <img id="poster">
+                <h2 id="title">
+                </h2>
+            </div>
+
+            <div class="detail">
+                <div id="genre">장르 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div id="director">감독 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div id="actor">배우 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div id="release">개봉 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            </div>
+        </div>
+
+        <button id="chatbot" onclick="location.href='chatbot.html'">AI와 채팅</button>
+        <button id="nextBtn" onclick="gotoBooking()">예매하기</button>
+        
+        <script src="movie.js"></script>
+    </body>
+</html>

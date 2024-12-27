@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 100vh;
+                margin: 0;
+                font-family: "IBM Plex Sans KR", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .logo {
+                text-align: center;
+                font-size: 50px;
+                cursor: pointer;
+                margin-bottom: 50px;
+            }
+
+            .signup {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                font-size: 13px;
+            }
+
+            .signup input {
+                padding: 5px;
+                margin: 3px;
+                width: 300px;
+                border-radius: 10px;
+                border-width: thin;
+                font-family: "IBM Plex Sans KR", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .signup button {
+                margin: 10px;
+                width: 310px;
+                height: 30px;
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+                border-width: thin;
+                cursor: pointer;
+                font-size: 15px;
+                font-family: "IBM Plex Sans KR", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1 class="logo" onclick="location.href='index.html'">Movie Ticketing Service</h1>
+
+        <div class="signup">
+            <input type="email" id="email" placeholder="xxxxx@xxx.com">
+            <input type="password" id="password" placeholder="비밀번호">
+            <input type="password" id="confirmPw" placeholder="비밀번호 확인">
+            <button onclick="checkSignup()">회원가입</button>
+        </div>
+
+        <script>
+            function checkSignup() {
+                let email = document.getElementById('email').value;
+                let password = document.getElementById('password').value;
+                let confirmPw = document.getElementById('confirmPw').value;
+
+                if (password !== confirmPw) {
+                    alert('입력하신 비밀번호가 다릅니다. 다시 확인해주세요.');
+                    return;
+                }
+                else if (!email || !password) {
+                    alert("모든 정보를 입력해주세요.");
+                    return;
+                }
+                
+                location.href = 'index.html';
+            }
+        </script>
+    </body>
+</html>

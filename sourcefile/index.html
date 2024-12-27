@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+    
+    <body>
+        <div class="header">
+            <h1 class="title" onclick="location.href='index.html'">Movie Ticketing Service</h1>
+
+            <div class="headerBtn">
+                <div class="loginDefault">
+                    <button id="logout" style="display:none;" onclick="logout()">로그아웃</button>
+                    <button id="mypage" style="display:none;" onclick="location.href='myTicket.html'">예매내역</button>
+                </div>
+                <div class="logoutDefault">
+                    <button id="login" onclick="location.href='login.html'">로그인</button>
+                    <button id="signup" onclick="location.href='signup.html'">회원가입</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="rank">영화 순위</h2>
+        <div class="movies">
+            <div>
+                <h3>1위</h3>
+                <img id=0 src="cheongseol.jpg" onclick="gotomovie(this.id)">
+                <h3>청설</h3>
+            </div>
+            <div>
+                <h3>2위</h3>
+                <img id=1 src="firefighter.jpg" onclick="gotomovie(this.id)">
+                <h3>소방관</h3>
+            </div>
+            <div>
+                <h3>3위</h3>
+                <img id=2 src="moana.jpg" onclick="gotomovie(this.id)">
+                <h3>모아나2</h3>
+            </div>
+        </div>
+
+        <button id="chatbot" onclick="location.href='chatbot.html'">AI와 채팅</button>
+    </body>
+</html>

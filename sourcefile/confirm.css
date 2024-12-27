@@ -1,0 +1,34 @@
+.info-pay-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 300px;
+    padding: 20px 20px 0px 20px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-left: 50px;
+    margin-bottom: 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    line-height: 2.1;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.pay {
+    width: 300px;
+    font-size: 18px;
+    line-height: 2.1;
+    margin-top: 0px;
+}
+
+#payList {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 23px;
+}

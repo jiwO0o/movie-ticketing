@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "IBM Plex Sans KR", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.title {
+    margin: 0;
+    font-size: 35px;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.headerBtn button {
+    border-radius: 20px;
+    border-width: thin;
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    font-family: "IBM Plex Sans KR", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#login {
+    background-color: white;
+}
+
+#signup {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#logout {
+    background-color: white;
+}
+
+#mypage {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#chatbot {
+    font-size: 25px;
+    margin: 10px;
+    width: 70px;
+    height: 80px;
+    color: gray;
+    border-radius: 5px;
+    border-width: thin;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-family: "IBM Plex Sans KR", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#backBtn {
+    font-size: 25px;
+    margin: 10px;
+    width: 200px;
+    height: 45px;
+    color: gray;
+    border-radius: 5px;
+    border-width: thin;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-family: "IBM Plex Sans KR", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#nextBtn {
+    font-size: 25px;
+    margin: 10px;
+    width: 200px;
+    height: 45px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    border-width: thin;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-family: "IBM Plex Sans KR", serif;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="seat.css">
+    </head>
+    
+    <body>
+        <div class="header">
+            <h1 class="title" onclick="location.href='index.html'">Movie Ticketing Service</h1>
+
+            <div class="headerBtn">
+                <button id="logout" onclick="logout()">로그아웃</button>
+                <button id="mypage" onclick="location.href='myTicket.html'">예매내역</button>
+            </div>
+        </div>
+
+        <div class="screen">스크린</div>
+        <div class="seatContainer">
+            <div class="row">
+                <button class="seat" data-seat="A1">A1</button>
+                <button class="seat" data-seat="A2">A2</button>
+                <button class="bookedSeat" data-seat="A3">A3</button>
+                <button class="seat" data-seat="A4">A4</button>
+                <button class="seat" data-seat="A5">A5</button>
+                <button class="seat" data-seat="A6">A6</button>
+                <button class="seat" data-seat="A7">A7</button>
+                <button class="seat" data-seat="A8">A8</button>
+            </div>
+            <div class="row">
+                <button class="seat" data-seat="B1">B1</button>
+                <button class="seat" data-seat="B2">B2</button>
+                <button class="seat" data-seat="B3">B3</button>
+                <button class="seat" data-seat="B4">B4</button>
+                <button class="seat" data-seat="B5">B5</button>
+                <button class="bookedSeat" data-seat="B6">B6</button>
+                <button class="bookedSeat" data-seat="B7">B7</button>
+                <button class="seat" data-seat="B8">B8</button>
+            </div>
+            <div class="row">
+                <button class="bookedSeat" data-seat="C1">C1</button>
+                <button class="seat" data-seat="C2">C2</button>
+                <button class="seat" data-seat="C3">C3</button>
+                <button class="seat" data-seat="C4">C4</button>
+                <button class="seat" data-seat="C5">C5</button>
+                <button class="seat" data-seat="C6">C6</button>
+                <button class="seat" data-seat="C7">C7</button>
+                <button class="seat" data-seat="C8">C8</button>
+            </div>
+            <div class="row">
+                <button class="seat" data-seat="D1">D1</button>
+                <button class="seat" data-seat="D2">D2</button>
+                <button class="seat" data-seat="D3">D3</button>
+                <button class="seat" data-seat="D4">D4</button>
+                <button class="seat" data-seat="D5">D5</button>
+                <button class="seat" data-seat="D6">D6</button>
+                <button class="seat" data-seat="D7">D7</button>
+                <button class="bookedSeat" data-seat="D8">D8</button>
+            </div>
+            <div class="row">
+                <button class="seat" data-seat="E1">E1</button>
+                <button class="seat" data-seat="E2">E2</button>
+                <button class="seat" data-seat="E3">E3</button>
+                <button class="seat" data-seat="E4">E4</button>
+                <button class="seat" data-seat="E5">E5</button>
+                <button class="bookedSeat" data-seat="E6">E6</button>
+                <button class="seat" data-seat="E7">E7</button>
+                <button class="seat" data-seat="E8">E8</button>
+            </div>
+        </div>
+        
+        <div id="chosen">
+
+        </div>
+        
+        <div>
+            <button id="backBtn" onclick="location.href='booking.html'">뒤로가기</button>
+            <button id="nextBtn" onclick="gotoConfirm()">결제하기</button>
+        </div>
+
+        <script src="seat.js"></script>
+    </body>
+</html>

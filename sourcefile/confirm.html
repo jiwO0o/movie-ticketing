@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="confirm.css">
+    </head>
+    
+    <body>
+        <div class="header">
+            <h1 class="title" onclick="location.href='index.html'">Movie Ticketing Service</h1>
+
+            <div class="headerBtn">
+                <button id="logout" onclick="logout()">로그아웃</button>
+                <button id="mypage" onclick="location.href='myTicket.html'">예매내역</button>
+            </div>
+        </div>
+
+        <h2>예매할 정보 확인하기</h2>
+
+        <div class="info-pay-container">
+            <div class="info">
+                <div id="movieInfo">영화: </div>
+                <div id="whenInfo">관람일: </div>
+                <div id="timeInfo">관람시간: </div>
+                <div id="theaterInfo">관람극장: </div>
+                <div id="seatInfo">관람좌석: </div>
+            </div>
+            
+            <div class="pay">
+                <div id="payList">최종 결제 내역</div>
+                <div id="seatPrice">티켓금액 </div>
+                <hr>
+                <div id="discount">할인 </div>
+                <hr>
+                <div id="finalPrice">총 결제금액 </div>
+                <hr>
+                <div>일반결제</div>
+                <select id="card">
+                    <option value="none">=== 선택 ===</option>
+                    <option value="kookmin">국민카드</option>
+                    <option value="hana">하나카드</option>
+                    <option value="shinhan">신한카드</option>
+                </select>
+            </div>
+        </div>
+        
+        <div>
+            <button id="backBtn" onclick="location.href='seat.html'">뒤로가기</button>
+            <button id="nextBtn" onclick="gotoPayment()">결제하기</button>
+        </div>
+
+        <script src="confirm.js"></script>
+    </body>
+</html>

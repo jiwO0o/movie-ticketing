@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+            body {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                height: 100vh;
+                text-align: center;
+                font-family: "IBM Plex Sans KR", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 60px;
+                margin-bottom: 70px;
+                margin-top: 0;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #checkBtn {
+                font-size: 28px;
+                width: 400px;
+                height: 60px;
+                background-color: gray;
+                color: white;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+                font-family: "IBM Plex Sans KR", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            #mainBtn {
+                font-size: 28px;
+                width: 400px;
+                height: 60px;
+                color: gray;
+                border-width: thin;
+                border-radius: 5px;
+                cursor: pointer;
+                font-family: "IBM Plex Sans KR", serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h2>결제가 완료되었습니다!</h2>
+        <div>
+            <button id="checkBtn" onclick="location.href='myTicket.html'">예매내역 확인하기</button>
+            <button id="mainBtn" onclick="location.href='index.html'">메인화면으로 돌아가기</button>
+        </div>
+
+        <script src="paySuccess.js"></script>
+    </body>
+</html>

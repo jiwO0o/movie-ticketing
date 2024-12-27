@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="booking.css">
+    </head>
+    
+    <body>
+        <div class="header">
+            <h1 class="title" onclick="location.href='index.html'">Movie Ticketing Service</h1>
+
+            <div class="headerBtn">
+                <button id="logout" onclick="logout()">로그아웃</button>
+                <button id="mypage" onclick="location.href='myTicket.html'">예매내역</button>
+            </div>
+        </div>
+
+        <div class="selection">
+            <h2>극장</h2>
+            <select id="theater">
+                <option value="none">=== 선택 ===</option>
+                <option value="gangnam">강남</option>
+                <option value="gundae">건대입구</option>
+                <option value="shinsa">신사</option>
+                <option value="anam">안암</option>
+                <option value="jonglo">종로</option>
+                <option value="hongdae">홍대</option>
+            </select>
+            <h2>날짜</h2>
+            <select id="when">
+                <option value="none">=== 선택 ===</option>
+                <option value="1221">2024/12/21 (토)</option>
+                <option value="1222">2024/12/22 (일)</option>
+                <option value="1223">2024/12/23 (월)</option>
+                <option value="1224">2024/12/24 (화)</option>
+                <option value="1225">2024/12/25 (수)</option>
+                <option value="1226">2024/12/26 (목)</option>
+                <option value="1227">2024/12/27 (금)</option>
+            </select>
+            <h2>시간</h2>
+            <select id="time">
+                <option value="none">=== 선택 ===</option>
+                <option value="1230">12:30</option>
+                <option value="1550">15:00</option>
+                <option value="1800">18:00</option>
+                <option value="2030">20:30</option>
+            </select>
+            <button id="nextBtn" onclick="gotoSeat()">좌석 선택하기</button>
+        </div>
+
+        <script src="booking.js"></script>
+    </body>
+</html>
